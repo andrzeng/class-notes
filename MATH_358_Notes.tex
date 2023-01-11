@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} % Allows you to insert figures
+\usepackage{amsmath} % Allows you to do equations
+\usepackage{fancyhdr} % Formats the header
+\usepackage{geometry} % Formats the paper size, orientation, and 
+\usepackage{amsthm, amssymb}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+
+\begin{document}
+\section{Lecture 1: January 6, 2023}
+\begin{tcolorbox}
+An alternative formulation of the triangle inequality:\\
+$\|x - y\| \geq \|x\| - \|y \|$
+\end{tcolorbox}
+\section{Lecture 2: January 10, 2023}
+In 1D, the derivative of a function f at $x_0 \in \mathbb{R}$ is defined as \\
+$f'(x_0) = \lim_{x\rightarrow x_0} \dfrac{f(x) - f(x_0)}{x - x_0}$\\
+If this limit exists, we say f is \textbf{differentiable} at $x_0$.\\
+To prepare our transition into multiple dimensions, we can rewrite the above equation as:\\
+$\lim_{x \rightarrow x_0} \dfrac{f(x) - f(x_0)}{x - x_0} - f'(x_0) = 0$\\
+Or,\\
+$\lim_{x \rightarrow x_0} \dfrac{f(x) - f(x_0) - f'(x_0)(x - x_0)}{x - x_0} = 0$\\
+This is the same as questioning the existence of an $L = f'(x_0)$ that satisfies:\\
+$\lim_{x \rightarrow x_0} \dfrac{f(x) - f(x_0) - L(x - x_0)}{x - x_0} = 0$\\
+
+
+
+\begin{comment}
+\begin{tcolorbox}
+A function $f: \Omega \subseteq \mathbb{R}^n \rightarrow \mathbb{R}^m$ \textbf{is differentiable at $x_0 \in \mathbb{R}^n$} \\
+if $\forall \epsilon > 0, \exists \delta > 0$ such that there exists a linear map $L: \mathbb{R}^n \rightarrow \mathbb{R}^m$ such that when $\|h\|_{\mathbb{R}^n} < \delta$, we have $\|f(x_0 + h) - f(x_0) - L \cdot h\|_{\mathbb{R}^m} < \epsilon \|h\|_{\mathbb{R}^n}$.
+\end{tcolorbox}
+\end{comment}
+
+
+\end{document}
+
+
